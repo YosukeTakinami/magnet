@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+/*
+header
+----------------------------------------------- */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+    @include mq(vr, max) {
+      padding: 20px;
+    }
+  }
+}
+
+/*
+nav
+----------------------------------------------- */
+.nav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & a {
+      display: block;
+    }
+  }
+  &__item {
+    transition: 0.8s;
+    & + & {
+      margin-left: 25px;
+    }
+    img{
+      transition: 0.5s;
+    }
+    &.-text {
+      font-size: 20px;
+      text-transform: uppercase;
+      @include mq(tab, max) {
+        margin-top: 4px;
+        font-size: 16px;
+      }
+    }
+    &.-img {
+      width: 44.75px;
+      @include mq(tab, max) {
+        width: 30px;
+      }
+    }
+    &:hover{
+      transform: scale(0.8, 0.8);
+      @include mq(tab, max) {
+        transform: 1;
+      }
+    }
+  }
+}

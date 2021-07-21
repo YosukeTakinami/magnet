@@ -1,0 +1,210 @@
+@charset 'UTF-8';
+/*
+loader
+----------------------------------------------- */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-color;
+  @include mq(vr, max) {
+    flex-direction: column;
+  }
+  & p {
+    font-size: 48px;
+    animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    will-change: transform;
+    @include mq(lap, max) {
+      font-size: 25px;
+    }
+  }
+  &__txt {
+    display: flex;
+    font-weight: bold;
+    @include mq(vr, max) {
+      &:nth-of-type(1) {
+        margin-left: -2em;
+      }
+      &:nth-of-type(2) {
+        margin-left: -2em;
+      }
+    }
+    & + & {
+      @include mq(vr, max) {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+
+.tx1 {
+  margin-left: 0.10em;
+  animation-name: tx1;
+}
+.tx2 {
+  margin-left: 0.12em;
+  animation-name: tx2;
+}
+.tx3 {
+  margin-left: 0.2em;
+  animation-name: tx3;
+}
+.tx4 {
+  animation-name: tx4;
+}
+.tx5 {
+  margin-left: 0.1em;
+  animation-name: tx5;
+}
+.tx6 {
+  margin-left: 2.5em;
+  @include mq(vr, max) {
+    margin-left: 0;
+  }
+}
+.tx7 {
+  margin-left: 0.1em;
+  animation-name: tx7;
+}
+.tx8 {
+  margin-left: 0.1em;
+  animation-name: tx8;
+}
+.tx9 {
+  margin-left: 0.1em;
+  animation-name: tx9;
+}
+.tx10 {
+  margin-left: 0.1em;
+  animation-name: tx10;
+}
+.tx11 {
+  margin-left: 0.1em;
+  animation-name: tx11;
+}
+.tx12 {
+  margin-left: 0.1em;
+  animation-name: tx12;
+}
+.tx13 {
+  margin-left: 0.2em;
+  animation-name: tx13;
+}
+.tx14 {
+  margin-left: 0.2em;
+  animation-name: tx14;
+}
+.tx15 {
+  margin-left: 0.2em;
+  animation-name: tx15;
+}
+
+
+@keyframes tx1 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.8em); }
+}
+@keyframes tx2 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.4em); }
+}
+@keyframes tx3 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.65em); }
+}
+@keyframes tx4 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.75em); }
+}
+@keyframes tx5 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.8em); }
+}
+@keyframes tx6 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.3em); }
+}
+@keyframes tx7 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.1em); }
+}
+@keyframes tx8 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.2em); }
+}
+@keyframes tx9 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.2em); }
+}
+@keyframes tx10 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.4em); }
+}
+@keyframes tx11 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.5em); }
+}
+@keyframes tx12 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.5em); }
+}
+@keyframes tx13 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(0.75em); }
+}
+@keyframes tx14 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.3em); }
+}
+@keyframes tx15 {
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(1.6em); }
+}
+// @keyframes tx6 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(0.3em); }
+// }
+// @keyframes tx7 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.2em); }
+// }
+// @keyframes tx8 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.2em); }
+// }
+// @keyframes tx9 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.2em); }
+// }
+// @keyframes tx10 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.4em); }
+// }
+// @keyframes tx11 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.5em); }
+// }
+// @keyframes tx12 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.5em); }
+// }
+// @keyframes tx13 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.7em); }
+// }
+// @keyframes tx14 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.9em); }
+// }
+// @keyframes tx15 {
+//   0%, 20% { transform: translateX(0); }
+//   50%, 70% { transform: translateX(-0.9em); }
+// }

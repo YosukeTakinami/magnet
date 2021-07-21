@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+//====================================
+//  Break
+//====================================
+@import "../inc/mixin";
+/*
+  Break
+*/
+.br {
+  &-pc {
+    @include mq(lap) {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+}
+
+.isPc {
+  display: none;
+  @include mq(lap) {
+    display: block;
+  }
+}
+
+.isSp {
+  display: block;
+  @include mq(lap) {
+    display: none !important;
+  }
+}

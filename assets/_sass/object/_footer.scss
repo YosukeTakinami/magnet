@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+/*
+footer
+----------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-align: center;
+  background-color: $sub-color;
+}
+.copy {
+  font-size: 20px;
+  @include mq(lap, max) {
+    font-size: 14px;
+  }
+}

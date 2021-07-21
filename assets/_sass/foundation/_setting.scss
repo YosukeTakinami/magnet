@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+// -----------------------------------
+//  Layout Settings
+//------------------------------------
+
+// Contentの幅
+$inner-sp: 400;
+$inner-pc: 1218;
+$wsp: 375;
+$wtab: 768;
+$wpc: 1400;
+
+// ブレークポイント
+$breakpoints: (
+  "sp": 480px,
+  "tab": 768px,
+  "lap": 769px,
+  "desk": 1700px,
+  "vr": 1024px,
+) !default;
+
+//====================================
+//  Color Setings
+//====================================
+
+// ベースカラー
+$base-color: #fff;
+
+// メインカラー
+$main-color: #000;
+
+// サブカラー
+$sub-color: #e7e6e6;
+
+//アクティブ時のテキストカラー
+// $active-text-color: #fff;
+
+//====================================
+//  Typeface
+//====================================
+
+$font-set-primary: 'Noto Sans JP', sans-serif;
+$font-en: 'Arial', sans-serif;
