@@ -13,8 +13,10 @@ loader
   align-items: center;
   justify-content: center;
   background-color: $base-color;
+  margin-left: -70px;
   @include mq(vr, max) {
     flex-direction: column;
+    margin-left: 0;
   }
   & p {
     font-size: 48px;
@@ -68,6 +70,7 @@ loader
   margin-left: 2.5em;
   @include mq(vr, max) {
     margin-left: 0;
+    animation-name:none;
   }
 }
 .tx7 {
@@ -208,3 +211,9 @@ loader
 //   0%, 20% { transform: translateX(0); }
 //   50%, 70% { transform: translateX(-0.9em); }
 // }
+@include mq(vr, max) {
+  @keyframes tx7 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.5em); }
+  }
+}
