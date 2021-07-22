@@ -13,8 +13,10 @@ loader
   align-items: center;
   justify-content: center;
   background-color: $base-color;
+  margin-left: -40px;
   @include mq(vr, max) {
     flex-direction: column;
+    margin-left: 0;
   }
   & p {
     font-size: 48px;
@@ -29,6 +31,7 @@ loader
   &__txt {
     display: flex;
     font-weight: bold;
+    position: relative;
     @include mq(vr, max) {
       &:nth-of-type(1) {
         margin-left: -2em;
@@ -43,6 +46,16 @@ loader
       }
     }
   }
+}
+
+.marker{
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  height: 3px;
+  width: 40px;
+  background-color: black;
+  animation-name: marker;
 }
 
 .tx1 {
@@ -69,6 +82,7 @@ loader
   animation-name: tx6;
   @include mq(vr, max) {
     margin-left: 0;
+    animation-name:none;
   }
 }
 .tx7 {
@@ -169,6 +183,10 @@ loader
   0%, 20% { transform: translateX(0); }
   50%, 70% { transform: translateX(3.55em); }
 }
+@keyframes marker { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(337rem); }
+}
 // @keyframes tx6 {
 //   0%, 20% { transform: translateX(0); }
 //   50%, 70% { transform: translateX(0.3em); }
@@ -209,3 +227,41 @@ loader
 //   0%, 20% { transform: translateX(0); }
 //   50%, 70% { transform: translateX(-0.9em); }
 // }
+@include mq(vr, max) {
+  @keyframes tx7 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.1em); }
+  }
+  @keyframes tx8 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.2em); }
+  }
+  @keyframes tx9 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.2em); }
+  }
+  @keyframes tx10 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.4em); }
+  }
+  @keyframes tx11 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.5em); }
+  }
+  @keyframes tx12 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.5em); }
+  }
+  @keyframes tx13 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(0.75em); }
+  }
+  @keyframes tx14 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(1.3em); }
+  }
+  @keyframes tx15 {
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(1.6em); }
+  }
+}
